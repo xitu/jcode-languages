@@ -1,0 +1,17 @@
+{
+  "name": "jcode-languages",
+  "version": "0.0.1",
+  "description": "码上掘金自定义语言合集",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "^5.16.0",
+    "eslint-config-sprite": "^1.0.6"
+  }
+}
