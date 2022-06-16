@@ -207,7 +207,8 @@ export default {
 			[/[ \t\r\n]+/, ''],
 			[/\/\*\*(?!\/)/, 'comment.doc', '@jsdoc'],
 			[/\/\*/, 'comment', '@comment'],
-			[/\/\/.*$/, 'comment']
+			[/\/\/.*$/, 'comment'],
+			[/^#!.*$/, 'comment'],
 		],
 
 		comment: [
