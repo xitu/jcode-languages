@@ -1,4 +1,4 @@
-import * as tsLanguage from './lang-typescript.js';
+import tsLanguage from './lang-typescript.js';
 
 export default {
 	// Set defaultToken to invalid to see what you do not tokenize yet
