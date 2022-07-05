@@ -20,7 +20,7 @@ export default {
           [/「「/, 'string', '@string'],
           [/「/, 'variable.name', '@variableName'],
           [/。/, 'delimiter'],
-          [/@constantNumeric/, "constant.numeric"],
+          [/@constantNumeric/, "number"],
           [/@constantLang/, "constant.language"],
           [/@keywordsModifier/, "keyword"],
           [/@keywordsType/, "type"],
