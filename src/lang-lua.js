@@ -110,7 +110,8 @@ export default {
 		whitespace: [
 			[/[ \t\r\n]+/, ''],
 			[/--\[([=]*)\[/, 'comment', '@comment.$1'],
-			[/--.*$/, 'comment']
+			[/--.*$/, 'comment'],
+      [/^#!.*$/, 'comment'],
 		],
 
 		comment: [
