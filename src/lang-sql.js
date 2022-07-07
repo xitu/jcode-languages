@@ -763,7 +763,8 @@ export default {
 		whitespace: [[/\s+/, 'white']],
 		comments: [
 			[/--+.*/, 'comment'],
-			[/\/\*/, { token: 'comment.quote', next: '@comment' }]
+			[/\/\*/, { token: 'comment.quote', next: '@comment' }],
+            [/^#!.*$/, 'comment'],
 		],
 		comment: [
 			[/[^*/]+/, 'comment'],
