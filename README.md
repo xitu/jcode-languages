@@ -75,6 +75,6 @@
 | [markdown](src/lang-markdown.js) | [lang-markdown](https://xitu.github.io/jcode-languages/dist/lang-markdown.json) | [markdown-demo](https://code.juejin.cn/pen/7117484770900049928) | [markdedjs](https://github.com/markedjs/marked) |
 | [python](src/lang-python.js) | [lang-python](https://xitu.github.io/jcode-languages/dist/lang-python.json) | [python-demo](https://code.juejin.cn/pen/7117216879185231902) | [brython](https://github.com/brython-dev/brython) |
 | [scheme](src/lang-scheme.js) | [lang-scheme](https://xitu.github.io/jcode-languages/dist/lang-scheme.json) | [scheme-demo](https://code.juejin.cn/pen/7117496697122455588) | [lips](https://github.com/jcubic/lips) |
-| [sql](src/lang-sql.js) | [lang-scheme](https://xitu.github.io/jcode-languages/dist/lang-sql.json) | [sql-demo](https://code.juejin.cn/pen/7117569541948833823) | [jSQL](https://github.com/Pamblam/jSQL) |
+| [sql](src/lang-sql.js) | [lang-sql](https://xitu.github.io/jcode-languages/dist/lang-sql.json) | [sql-demo](https://code.juejin.cn/pen/7117569541948833823) | [jSQL](https://github.com/Pamblam/jSQL) |
 | [webslides](src/lang-webslides.js) | [lang-webslides](https://xitu.github.io/jcode-languages/dist/lang-webslides.json) | [webslides-demo](https://code.juejin.cn/pen/7115222187925045256) | [webslides.md](https://github.com/xitu/webslides.md) |
 | [文言文](src/lang-wenyan.js) | [lang-wenyan](https://xitu.github.io/jcode-languages/dist/lang-wenyan.json) | [wenyan-demo](https://code.juejin.cn/pen/7117404732288663582) | [wenyan-lang](https://github.com/wenyan-lang/wenyan) |
