@@ -4,15 +4,17 @@
 
 ## 使用说明
 
-1. `Script Tab` 下选择 `Custom`
+![](https://p5.ssl.qhimg.com/t010e5342c2f84b519b.png)
 
-2. 第一行输入对应语言的Hashbang，比如：
+#### 1. `Script Tab` 下选择 `Custom`
+
+#### 2. 第一行输入对应语言的Hashbang，比如：
 
 ```js
 #!/jcode/lang/wenyan https://xitu.github.io/jcode-languages/dist/lang-wenyan.json
 ```
 
-3. 接着输入该语言代码
+接着输入该语言代码，如
 
 ```wenyan
 吾嘗觀「「控制秘術」」之書。方悟「等待指針按下」「等待指針移動」之義。
@@ -47,9 +49,9 @@
 云云。
 ```
 
-4. 在脚本依赖中引入 `https://unpkg.com/jcode-tools` 和依赖的语言解析脚本，如 `https://unpkg.com/@wenyanlang/core/index.min.js`
+#### 3. 在脚本依赖中引入 `https://unpkg.com/jcode-tools` 和依赖的语言解析脚本，如 `https://unpkg.com/@wenyanlang/core/index.min.js`
 
-5. `Markup Tab` 下对自定义语言进行解析：
+#### 4. `Markup Tab` 下对自定义语言进行解析，比如：
 
 ```html
 <div id="app"></div>
@@ -68,6 +70,8 @@
 
 ### 支持语言
 
+目前官方支持了9种语言：
+
 | 语言 | json 文件 | 示例 | 运行时 |
 | --- | --- | --- | --- |
 | [glsl](src/lang-lua.js) | [lang-glsl](https://xitu.github.io/jcode-languages/dist/lang-glsl.json) | [glsl-demo](https://code.juejin.cn/pen/7116418967081582623) | [glsl-doodle](https://github.com/akira-cn/glsl-doodle)
@@ -78,3 +82,27 @@
 | [sql](src/lang-sql.js) | [lang-sql](https://xitu.github.io/jcode-languages/dist/lang-sql.json) | [sql-demo](https://code.juejin.cn/pen/7117569541948833823) | [jSQL](https://github.com/Pamblam/jSQL) |
 | [webslides](src/lang-webslides.js) | [lang-webslides](https://xitu.github.io/jcode-languages/dist/lang-webslides.json) | [webslides-demo](https://code.juejin.cn/pen/7115222187925045256) | [webslides.md](https://github.com/xitu/webslides.md) |
 | [文言文](src/lang-wenyan.js) | [lang-wenyan](https://xitu.github.io/jcode-languages/dist/lang-wenyan.json) | [wenyan-demo](https://code.juejin.cn/pen/7117404732288663582) | [wenyan-lang](https://github.com/wenyan-lang/wenyan) |
+
+## 如何扩展我的自定义语言
+
+#### 准备语法高亮JSON文件
+
+码上掘金支持JSON格式的Monaco Editor语法高亮配置，而通常的Monaco Editor语法高文件是JS文件，需要转成对应的JSON。
+
+可以fork本代码仓库，直接将语法高亮JS文件复制到src目录，然后运行`npm run build`，会自动构建并生成dist目录下对应的JSON文件。
+
+之后可以自己发布这个JSON，或者给本项目提交PR，代码合并后，就可以直接通过：
+
+`https://xitu.github.io/jcode-languages/dist/lang-你的语言类型.json`
+
+来访问了。
+
+#### 设置hashbang
+
+语法为：
+
+```
+#!/jcode/lang/你的语言类型 https://xitu.github.io/jcode-languages/dist/lang-你的语言类型.json
+```
+
+然后就可以按照上面的使用说明，写自己的自定义语言代码了。
