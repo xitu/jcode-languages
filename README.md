@@ -75,6 +75,7 @@
 | 语言 | json 文件 | 示例 | 运行时 |
 | --- | --- | --- | --- |
 | [glsl](src/lang-lua.js) | [lang-glsl](https://xitu.github.io/jcode-languages/dist/lang-glsl.json) | [🎯 glsl-demo](https://code.juejin.cn/pen/7116418967081582623) | [glsl-doodle](https://github.com/akira-cn/glsl-doodle)
+| [live & coffee](src/lang-coffee.js) | [lang-coffee](https://xitu.github.io/jcode-languages/dist/lang-coffee.json) | [☕️ coffee-demo](https://code.juejin.cn/pen/7118946974367219726) [🎢 live-demo](https://code.juejin.cn/pen/7118944247788601352) | [coffeescript](https://github.com/jashkenas/coffeescript/) [livescript](https://github.com/gkz/LiveScript)|
 | [lua](src/lang-lua.js) | [lang-lua](https://xitu.github.io/jcode-languages/dist/lang-lua.json) | [♟ lua-demo](https://code.juejin.cn/pen/7117234319281618974) | [fengari-lua](https://github.com/fengari-lua/fengari-web) |
 | [markdown](src/lang-markdown.js) | [lang-markdown](https://xitu.github.io/jcode-languages/dist/lang-markdown.json) | [📓 markdown-demo](https://code.juejin.cn/pen/7117484770900049928) | [markdedjs](https://github.com/markedjs/marked) |
 | [python](src/lang-python.js) | [lang-python](https://xitu.github.io/jcode-languages/dist/lang-python.json) | [🐍 python-demo](https://code.juejin.cn/pen/7117216879185231902) | [brython](https://github.com/brython-dev/brython) |
