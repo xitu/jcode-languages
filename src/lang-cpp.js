@@ -309,7 +309,8 @@ export default {
 			[/\/\*\*(?!\/)/, 'comment.doc', '@doccomment'],
 			[/\/\*/, 'comment', '@comment'],
 			[/\/\/.*\\$/, 'comment', '@linecomment'],
-			[/\/\/.*$/, 'comment']
+			[/\/\/.*$/, 'comment'],
+      [/^#!.*$/, 'comment'],
 		],
 
 		comment: [

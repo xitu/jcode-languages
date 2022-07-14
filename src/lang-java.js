@@ -173,7 +173,8 @@ export default {
 			[/[ \t\r\n]+/, ''],
 			[/\/\*\*(?!\/)/, 'comment.doc', '@javadoc'],
 			[/\/\*/, 'comment', '@comment'],
-			[/\/\/.*$/, 'comment']
+			[/\/\/.*$/, 'comment'],
+      [/^#!.*$/, 'comment'],
 		],
 
 		comment: [
