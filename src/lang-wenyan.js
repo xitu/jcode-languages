@@ -2,6 +2,41 @@
 
 // wy-language.js
 export default {
+  LanguageConfiguration: {
+    comments: {
+        lineComment: '疏曰。',
+        // blockComment: ['/*', '*/']
+    },
+    // brackets: [
+    //   ['{', '}'],
+    //   ['[', ']'],
+    //   ['(', ')']
+    // ],
+    autoClosingPairs: [
+    //   { open: '[', close: ']' },
+    //   { open: '{', close: '}' },
+    //   { open: '(', close: ')' },
+    //   { open: "'", close: "'", notIn: ['string', 'comment'] },
+    //   { open: '"', close: '"', notIn: ['string'] },
+        { open: "『", close: "』", notIn: ['string', 'comment'] },
+        { open: '「', close: '」', notIn: ['string'] }
+    ],
+    surroundingPairs: [
+    //   { open: '{', close: '}' },
+    //   { open: '[', close: ']' },
+    //   { open: '(', close: ')' },
+    //   { open: '"', close: '"' },
+    //   { open: "'", close: "'" },
+        { open: '『', close: '』' },
+        { open: "「", close: "」" }
+    ],
+    // folding: {
+    //   markers: {
+    //     start: new RegExp('^\\s*#pragma\\s+region\\b'),
+    //     end: new RegExp('^\\s*#pragma\\s+endregion\\b')
+    //   }
+    // }
+  },
   keywordsExtend: "且施|平施|以俟其毕|行是術以俟其毕|爪哇國有腳本|其文如是矣|記|無名|今有令|行之",
   storageType: "元|物|爻|術|言|列|數",
   constantNumeric: "負|·|又|零|〇|一|二|三|四|五|六|七|八|九|十|百|千|萬|億|兆|京|垓|秭|穰|溝|澗|正|載|極|分|釐|毫|絲|忽|微|纖|沙|塵|埃|渺|漠",
