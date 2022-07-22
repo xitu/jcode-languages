@@ -49,7 +49,7 @@
 云云。
 ```
 
-#### 3. 在脚本依赖中引入 `https://unpkg.com/jcode-tools` 和依赖的语言解析脚本，如 `https://unpkg.com/@wenyanlang/core/index.min.js`
+#### 3. 在脚本依赖中引入 `https://cdn.jsdelivr.net/npm/jcode-tools` 和依赖的语言解析脚本，如 `https://cdn.jsdelivr.net/npm/@wenyanlang/core/index.min.js`
 
 #### 4. `Markup Tab` 下对自定义语言进行解析，比如：
 
