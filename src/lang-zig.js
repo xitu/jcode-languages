@@ -10,6 +10,7 @@ export default {
     'union', 'unreachable', 'use', 'var', 'volatile', 'while',
     'noasync', 'usingnamespace', 'anytype', 'anyframe',
     'true', 'false', 'null', 'undefined',
+    'suspend', 'resume', 'nosuspend',
   ],
 
   typeKeywords: [
