@@ -118,7 +118,7 @@ import {CodeXClient, logger} from 'https://cdn.jsdelivr.net/npm/jcode-tools@^0.1
 
 | 语言 | json 文件 | 示例 |
 | --- | --- | --- | 
-| c/c++ | [lang-glsl](https://xitu.github.io/jcode-languages/dist/lang-cpp.json) | [🐵 c-demo](https://code.juejin.cn/pen/7124117611972935716) [🙉 c++-demo](https://code.juejin.cn/pen/7124118398396530719)
+| c/c++ | [lang-cpp](https://xitu.github.io/jcode-languages/dist/lang-cpp.json) | [🐵 c-demo](https://code.juejin.cn/pen/7124117611972935716) [🙉 c++-demo](https://code.juejin.cn/pen/7124118398396530719)
 | erlang | [lang-erlang](https://xitu.github.io/jcode-languages/dist/lang-erlang.json) | [🦄 erl-demo](https://code.juejin.cn/pen/7124262663164542989)
 | dart | [lang-dart](https://xitu.github.io/jcode-languages/dist/lang-dart.json) | [🦆 dart-demo](https://code.juejin.cn/pen/7124194532933468168)
 | golang | [lang-go](https://xitu.github.io/jcode-languages/dist/lang-go.json) | [🐱 go-demo](https://code.juejin.cn/pen/7124119816633319438)
