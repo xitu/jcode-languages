@@ -119,8 +119,9 @@ import {CodeXClient, logger} from 'https://cdn.jsdelivr.net/npm/jcode-tools@^0.1
 | 语言 | json 文件 | 示例 |
 | --- | --- | --- | 
 | c/c++ | [lang-glsl](https://xitu.github.io/jcode-languages/dist/lang-cpp.json) | [🐵 c-demo](https://code.juejin.cn/pen/7124117611972935716) [🙉 c++-demo](https://code.juejin.cn/pen/7124118398396530719)
-| java | [lang-java](https://xitu.github.io/jcode-languages/dist/lang-java.json) | [☕️ java-demo](https://code.juejin.cn/pen/7124119426709848095)
 | golang | [lang-go](https://xitu.github.io/jcode-languages/dist/lang-go.json) | [🐱 go-demo](https://code.juejin.cn/pen/7124119816633319438)
+| java | [lang-java](https://xitu.github.io/jcode-languages/dist/lang-java.json) | [☕️ java-demo](https://code.juejin.cn/pen/7124119426709848095)
+| javascript | [lang-javascript](https://xitu.github.io/jcode-languages/dist/lang-javascript.json) | [🦋 nodejs-demo-async](https://code.juejin.cn/pen/7121977600011927589)
 | python | [lang-python](https://xitu.github.io/jcode-languages/dist/lang-python.json) | [🐍 python-demo](https://code.juejin.cn/pen/7124120405828173831) |
 | rust | [lang-rust](https://xitu.github.io/jcode-languages/dist/lang-rust.json) | [🦁 rust-demo](https://code.juejin.cn/pen/7123427292306817060) |
 | zig | [lang-zig](https://xitu.github.io/jcode-languages/dist/lang-zig.json) | [🦉 zig-demo](https://code.juejin.cn/pen/7123497832207613988) |
