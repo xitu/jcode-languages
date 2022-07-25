@@ -68,6 +68,36 @@
 </script>
 ```
 
+#### 5. Server端语言
+
+目前码上掘金通过[CodeX-API](https://github.com/akira-cn/CodeX-API)支持Server端编程语言。
+
+比如Rust语言：
+
+[例子](https://code.juejin.cn/pen/7123427292306817060)
+
+```html
+<div id="app"></div>
+<script type="module">
+import {CodeXClient, logger} from 'https://cdn.jsdelivr.net/npm/jcode-tools@^0.10.2/dist/jcode-tools.esm.js';
+(async () => {
+  window.console = logger(app);
+  console.log('提交代码，请稍候');
+
+  try {
+    const code = new CodeXClient(); // 默认会从CustomCode中获取
+    const result = await code.runCode();
+    if(result.error) {
+      console.error(result.error);
+    }
+    console.log(result.output);
+  } catch(ex) {
+    console.error(ex);
+  }
+})();
+</script>
+```
+
 ### 支持语言
 
 目前官方支持了9种语言：
@@ -83,6 +113,17 @@
 | [sql](src/lang-sql.js) | [lang-sql](https://xitu.github.io/jcode-languages/dist/lang-sql.json) | [🦗 sql-demo](https://code.juejin.cn/pen/7117569541948833823) | [jSQL](https://github.com/Pamblam/jSQL) |
 | [webslides](src/lang-webslides.js) | [lang-webslides](https://xitu.github.io/jcode-languages/dist/lang-webslides.json) | [🐙 webslides-demo](https://code.juejin.cn/pen/7115222187925045256) | [webslides.md](https://github.com/xitu/webslides.md) |
 | [文言文](src/lang-wenyan.js) | [lang-wenyan](https://xitu.github.io/jcode-languages/dist/lang-wenyan.json) | [🐧 wenyan-demo](https://code.juejin.cn/pen/7117404732288663582) | [wenyan-lang](https://github.com/wenyan-lang/wenyan) |
+
+以及多种Server端语言：
+
+| 语言 | json 文件 | 示例 |
+| --- | --- | --- | 
+| c/c++ | [lang-glsl](https://xitu.github.io/jcode-languages/dist/lang-cpp.json) | [🐵 c-demo](https://code.juejin.cn/pen/7124117611972935716) [🙉 c++-demo](https://code.juejin.cn/pen/7124118398396530719)
+| java | [lang-java](https://xitu.github.io/jcode-languages/dist/lang-java.json) | [☕️ java-demo](https://code.juejin.cn/pen/7124119426709848095)
+| golang | [lang-go](https://xitu.github.io/jcode-languages/dist/lang-go.json) | [🐱 go-demo](https://code.juejin.cn/pen/7124119816633319438)
+| python | [lang-python](https://xitu.github.io/jcode-languages/dist/lang-python.json) | [🐍 python-demo](https://code.juejin.cn/pen/7124120405828173831) |
+| rust | [lang-rust](https://xitu.github.io/jcode-languages/dist/lang-rust.json) | [🦁 rust-demo](https://code.juejin.cn/pen/7123427292306817060) |
+| zig | [lang-zig](https://xitu.github.io/jcode-languages/dist/lang-zig.json) | [🦉 zig-demo](https://code.juejin.cn/pen/7123497832207613988) |
 
 ## 如何扩展我的自定义语言
 
