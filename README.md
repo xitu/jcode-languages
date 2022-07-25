@@ -125,7 +125,7 @@ import {CodeXClient, logger} from 'https://cdn.jsdelivr.net/npm/jcode-tools@^0.1
 | java | [lang-java](https://xitu.github.io/jcode-languages/dist/lang-java.json) | [☕️ java-demo](https://code.juejin.cn/pen/7124119426709848095)
 | javascript | [lang-javascript](https://xitu.github.io/jcode-languages/dist/lang-javascript.json) | [🦋 nodejs-demo-async](https://code.juejin.cn/pen/7121977600011927589)
 | perl | [lang-perl](https://xitu.github.io/jcode-languages/dist/lang-perl.json) | [🐪 perl-demo](https://code.juejin.cn/pen/7124188849688805412)
-| php | [lang-php](https://xitu.github.io/jcode-languages/dist/lang-php.json) | [🐘 perl-php](https://code.juejin.cn/pen/7124185922190606373)
+| php | [lang-php](https://xitu.github.io/jcode-languages/dist/lang-php.json) | [🐘 php-demo](https://code.juejin.cn/pen/7124185922190606373)
 | python | [lang-python](https://xitu.github.io/jcode-languages/dist/lang-python.json) | [🐍 python-demo](https://code.juejin.cn/pen/7124120405828173831) |
 | ruby | [lang-ruby](https://xitu.github.io/jcode-languages/dist/lang-ruby.json) | [🦑 ruby-demo](https://code.juejin.cn/pen/7124181246045290532) |
 | rust | [lang-rust](https://xitu.github.io/jcode-languages/dist/lang-rust.json) | [🦁 rust-demo](https://code.juejin.cn/pen/7123427292306817060) |
