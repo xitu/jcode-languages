@@ -58,7 +58,8 @@ export default {
 			[/<\?((php)|=)?/, { token: '@rematch', switchTo: '@phpInSimpleState.comment' }],
 			[/-->/, 'comment.html', '@pop'],
 			[/[^-]+/, 'comment.content.html'],
-			[/./, 'comment.content.html']
+			[/./, 'comment.content.html'],
+			[/^#!.*$/, 'comment'],
 		],
 
 		otherTag: [
