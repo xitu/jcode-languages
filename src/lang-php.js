@@ -36,6 +36,7 @@ export default {
 	// The main tokenizer for our languages
 	tokenizer: {
 		root: [
+			[/^#!.*$/, 'metatag'],
 			[/<\?((php)|=)?/, { token: '@rematch', switchTo: '@phpInSimpleState.root' }],
 			[/<!DOCTYPE/, 'metatag.html', '@doctype'],
 			[/<!--/, 'comment.html', '@comment'],
@@ -59,7 +60,6 @@ export default {
 			[/-->/, 'comment.html', '@pop'],
 			[/[^-]+/, 'comment.content.html'],
 			[/./, 'comment.content.html'],
-			[/^#!.*$/, 'metatag'],
 		],
 
 		otherTag: [
