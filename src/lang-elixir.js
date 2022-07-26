@@ -127,6 +127,7 @@ export default {
 		root: [
 			{ include: '@whitespace' },
 			{ include: '@comments' },
+      { include: '@hashbang' },
 			// Keywords start as either an identifier or a string,
 			// but end with a : so it's important to match this first.
 			{ include: '@keywordsShorthand' },
@@ -146,6 +147,7 @@ export default {
 		// Comments
 
 		comments: [[/(#)(.*)/, ['comment.punctuation', 'comment']]],
+    hashbang: [/^#!.*$/, 'metatag'],
 
 		// Keyword list shorthand
 

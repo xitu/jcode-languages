@@ -116,6 +116,7 @@ export default {
 	// The main tokenizer for our languages
 	tokenizer: {
 		root: [
+      [/^#!.*$/, 'metatag'],
 			// strings
 			[/\braw"""/, { token: 'string.quote', bracket: '@open', next: '@rawstringt' }],
 			[/\braw"/, { token: 'string.quote', bracket: '@open', next: '@rawstring' }],

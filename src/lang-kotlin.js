@@ -172,6 +172,7 @@ export default {
 		root: [
 			// class name highlighting
 			[/[A-Z][\w\$]*/, 'type.identifier'],
+      [/^#!.*$/, 'metatag'],
 
 			// identifiers and keywords
 			[

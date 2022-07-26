@@ -222,7 +222,8 @@ export default {
 
 		whitespace: [
 			[/\s+/, 'white'],
-			[/"""/, 'string.quote', '@endDblDocString']
+			[/"""/, 'string.quote', '@endDblDocString'],
+      [/^#!.*$/, 'metatag'],
 		],
 
 		endDblDocString: [
