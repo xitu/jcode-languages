@@ -51,7 +51,7 @@ export default {
           [/@keywordsExtend/, "keyword"],
           [/(注曰|疏曰|批曰)。「「/, 'comment', '@blockComment'],
           [/(注曰|疏曰|批曰).*$/, 'comment'],
-          [/^#!.*$/, 'comment'],
+          [/^#!.*$/, 'metatag'],
           [/「「/, 'string', '@string'],
           [/「/, 'variable.name', '@variableName'],
           [/。/, 'delimiter'],

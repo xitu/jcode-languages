@@ -262,7 +262,7 @@ export default {
 	tokenizer: {
 		root: [
 			// Raw string literals
-      [/^#!.*$/, 'comment'],
+      [/^#!.*$/, 'metatag'],
 			[/r(#*)"/, { token: 'string.quote', bracket: '@open', next: '@stringraw.$1' }],
 			[
 				/[a-zA-Z][a-zA-Z0-9_]*!?|_[a-zA-Z0-9_]+/,

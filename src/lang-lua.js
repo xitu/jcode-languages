@@ -111,7 +111,7 @@ export default {
 			[/[ \t\r\n]+/, ''],
 			[/--\[([=]*)\[/, 'comment', '@comment.$1'],
 			[/--.*$/, 'comment'],
-      [/^#!.*$/, 'comment'],
+      [/^#!.*$/, 'metatag'],
 		],
 
 		comment: [

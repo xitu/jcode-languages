@@ -171,6 +171,7 @@ export default {
 		// Deal with white space, including single and multi-line comments
 		whitespace: [
 			[/\s+/, 'white'],
+			[/^#!.*$/, 'metatag'],
 			[/(^#.*$)/, 'comment'],
 			[/'''/, 'string', '@endDocString'],
 			[/"""/, 'string', '@endDblDocString']

@@ -93,7 +93,7 @@ export default {
       [/[ \t\r\n]+/, 'white'],
       [/\/\*/,       'comment', '@comment' ],
       [/\/\/.*$/,    'comment'],
-      [/^#!.*$/, 'comment'],
+      [/^#!.*$/, 'metatag'],
     ],
   },
 };

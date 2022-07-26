@@ -764,7 +764,8 @@ export default {
 		whitespace: [
 			[/[\s,]+/, 'white'],
 			[/;.*$/, 'comment'],
-			[/\(comment\b/, 'comment', '@comment']
+			[/\(comment\b/, 'comment', '@comment'],
+			[/^#!.*$/, 'metatag'],
 		],
 
 		comment: [

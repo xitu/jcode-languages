@@ -521,6 +521,7 @@ export default {
 		whitespace: [
 			[/[ \t\r\n]+/, ''],
 			[/^\s*=begin\b/, 'comment', '@comment'],
+			[/^#!.*$/, 'metatag'],
 			[/#.*$/, 'comment']
 		],
 

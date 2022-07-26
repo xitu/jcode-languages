@@ -59,7 +59,7 @@ export default {
 			[/-->/, 'comment.html', '@pop'],
 			[/[^-]+/, 'comment.content.html'],
 			[/./, 'comment.content.html'],
-			[/^#!.*$/, 'comment'],
+			[/^#!.*$/, 'metatag'],
 		],
 
 		otherTag: [

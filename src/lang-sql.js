@@ -764,7 +764,7 @@ export default {
 		comments: [
 			[/--+.*/, 'comment'],
 			[/\/\*/, { token: 'comment.quote', next: '@comment' }],
-            [/^#!.*$/, 'comment'],
+      [/^#!.*$/, 'metatag'],
 		],
 		comment: [
 			[/[^*/]+/, 'comment'],

@@ -69,7 +69,7 @@ const attribute uniform varying`.split(/\s+/),
       [/[ \t\r\n]+/, 'white'],
       [/\/\*/, 'comment', '@comment'],
       [/\/\/.*$/, 'comment'],
-      [/^#!.*$/, 'comment'],
+      [/^#!.*$/, 'metatag'],
     ],
   },
 };

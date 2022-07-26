@@ -83,6 +83,7 @@ export default {
 
 			// Comments
 			[/###/, 'comment', '@comment'],
+			[/^#!.*$/, 'metatag'],
 			[/#.*$/, 'comment'],
 
 			// regular expressions

@@ -106,7 +106,7 @@ export default {
     whitespace: [
       [/[ \t\r\n]+/, 'white'],
       [/%.*$/, 'comment'],
-      [/^#!.*$/, 'comment'],
+      [/^#!.*$/, 'metatag'],
     ],
     string_double: [
       [/[^\\"]+/, 'string'],

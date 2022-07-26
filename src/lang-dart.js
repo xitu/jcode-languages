@@ -229,7 +229,7 @@ export default {
 			[/\/\*/, 'comment', '@comment'],
 			[/\/\/\/.*$/, 'comment.doc'],
 			[/\/\/.*$/, 'comment'],
-			[/^#!.*$/, 'comment'],
+			[/^#!.*$/, 'metatag'],
 		],
 
 		comment: [

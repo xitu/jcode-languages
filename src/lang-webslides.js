@@ -25,7 +25,7 @@ export default {
   tokenizer: {
     root: [
       // hashbang
-      [/^#!.*$/, 'comment'],
+      [/^#!.*$/, 'metatag'],
 
       // headers (with #)
       [/^(\s{0,3})(#+)((?:[^\\#]|@escapes)+)((?:#+)?)/, ['white', 'keyword', 'keyword', 'keyword']],
