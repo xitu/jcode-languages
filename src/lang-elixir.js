@@ -147,7 +147,7 @@ export default {
 		// Comments
 
 		comments: [[/(#)(.*)/, ['comment.punctuation', 'comment']]],
-    hashbang: [/^#!.*$/, 'metatag'],
+    hashbang: [[/^#!.*$/, 'metatag']],
 
 		// Keyword list shorthand
 
