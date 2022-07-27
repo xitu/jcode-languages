@@ -120,15 +120,18 @@ import {CodeXClient, logger} from 'https://cdn.jsdelivr.net/npm/jcode-tools@^0.1
 | --- | --- | --- | 
 | c/c++ | [lang-cpp](https://xitu.github.io/jcode-languages/dist/lang-cpp.json) | [🐵 c-demo](https://code.juejin.cn/pen/7124117611972935716) [🙉 c++-demo](https://code.juejin.cn/pen/7124118398396530719)
 | dart | [lang-dart](https://xitu.github.io/jcode-languages/dist/lang-dart.json) | [🦆 dart-demo](https://code.juejin.cn/pen/7124194532933468168)
+| elixir | [lang-elixir](https://xitu.github.io/jcode-languages/dist/lang-elixir.json) | [🐆 elixir-demo](https://code.juejin.cn/pen/7124685644244189221)
 | erlang | [lang-erlang](https://xitu.github.io/jcode-languages/dist/lang-erlang.json) | [🦄 erl-demo](https://code.juejin.cn/pen/7124262663164542989)
 | golang | [lang-go](https://xitu.github.io/jcode-languages/dist/lang-go.json) | [🐱 go-demo](https://code.juejin.cn/pen/7124119816633319438)
 | java | [lang-java](https://xitu.github.io/jcode-languages/dist/lang-java.json) | [☕️ java-demo](https://code.juejin.cn/pen/7124119426709848095)
 | javascript | [lang-javascript](https://xitu.github.io/jcode-languages/dist/lang-javascript.json) | [🦋 nodejs-demo-async](https://code.juejin.cn/pen/7121977600011927589)
+| kotlin | [lang-kotlin](https://xitu.github.io/jcode-languages/dist/lang-kotlin.json) | [🐟 kotlin-demo](https://code.juejin.cn/pen/7124665173050130446)
 | perl | [lang-perl](https://xitu.github.io/jcode-languages/dist/lang-perl.json) | [🐪 perl-demo](https://code.juejin.cn/pen/7124188849688805412)
 | php | [lang-php](https://xitu.github.io/jcode-languages/dist/lang-php.json) | [🐘 php-demo](https://code.juejin.cn/pen/7124185922190606373)
 | python | [lang-python](https://xitu.github.io/jcode-languages/dist/lang-python.json) | [🐍 python-demo](https://code.juejin.cn/pen/7124120405828173831) |
 | ruby | [lang-ruby](https://xitu.github.io/jcode-languages/dist/lang-ruby.json) | [🦑 ruby-demo](https://code.juejin.cn/pen/7124181246045290532) |
 | rust | [lang-rust](https://xitu.github.io/jcode-languages/dist/lang-rust.json) | [🦁 rust-demo](https://code.juejin.cn/pen/7123427292306817060) |
+| scala | [lang-scala](https://xitu.github.io/jcode-languages/dist/lang-scala.json) | [🦉 zig-demo](https://code.juejin.cn/pen/7124673834191421477) |
 | zig | [lang-zig](https://xitu.github.io/jcode-languages/dist/lang-zig.json) | [🦉 zig-demo](https://code.juejin.cn/pen/7123497832207613988) |
 
 ## 如何扩展我的自定义语言
