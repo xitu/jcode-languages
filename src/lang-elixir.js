@@ -31,7 +31,7 @@ export default {
     }
   },
 
-  defaultToken: 'source',
+  defaultToken: 'invalid',
 	tokenPostfix: '.elixir',
 
 	brackets: [
