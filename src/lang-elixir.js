@@ -126,8 +126,8 @@ export default {
 	tokenizer: {
 		root: [
 			{ include: '@whitespace' },
-			{ include: '@comments' },
       { include: '@hashbang' },
+			{ include: '@comments' },
 			// Keywords start as either an identifier or a string,
 			// but end with a : so it's important to match this first.
 			{ include: '@keywordsShorthand' },
