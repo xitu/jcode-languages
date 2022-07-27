@@ -100,7 +100,7 @@ import {CodeXClient, logger} from 'https://cdn.jsdelivr.net/npm/jcode-tools@^0.1
 
 ### 支持语言
 
-目前官方支持了9种语言：
+目前官方支持了10种语言：
 
 | 语言 | json 文件 | 示例 | 运行时 |
 | --- | --- | --- | --- |
