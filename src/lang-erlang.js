@@ -1,4 +1,29 @@
 export default {
+	LanguageConfiguration: {
+		comments: {
+			lineComment: '%'
+		},
+		brackets: [
+			['{', '}'],
+			['[', ']'],
+			['(', ')']
+		],
+		autoClosingPairs: [
+			{ open: '[', close: ']' },
+			{ open: '{', close: '}' },
+			{ open: '(', close: ')' },
+			{ open: "'", close: "'", notIn: ['string', 'comment'] },
+			{ open: '"', close: '"', notIn: ['string'] }
+		],
+		surroundingPairs: [
+			{ open: '{', close: '}' },
+			{ open: '[', close: ']' },
+			{ open: '(', close: ')' },
+			{ open: '"', close: '"' },
+			{ open: "'", close: "'" }
+		],
+	},
+
   tokenPostfix: '.erl',
   defaultToken: 'invalid',
   keywords: [

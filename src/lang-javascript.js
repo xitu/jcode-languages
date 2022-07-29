@@ -1,6 +1,7 @@
 import tsLanguage from './lang-typescript.js';
 
 export default {
+	LanguageConfiguration: tsLanguage.LanguageConfiguration,
 	// Set defaultToken to invalid to see what you do not tokenize yet
 	defaultToken: 'invalid',
 	tokenPostfix: '.js',

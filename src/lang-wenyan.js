@@ -5,28 +5,28 @@ export default {
   LanguageConfiguration: {
     comments: {
         lineComment: '疏曰。',
-        // blockComment: ['/*', '*/']
+        blockComment: ['/*', '*/']
     },
-    // brackets: [
-    //   ['{', '}'],
-    //   ['[', ']'],
-    //   ['(', ')']
-    // ],
+    brackets: [
+      ['{', '}'],
+      ['[', ']'],
+      ['(', ')']
+    ],
     autoClosingPairs: [
-    //   { open: '[', close: ']' },
-    //   { open: '{', close: '}' },
-    //   { open: '(', close: ')' },
-    //   { open: "'", close: "'", notIn: ['string', 'comment'] },
-    //   { open: '"', close: '"', notIn: ['string'] },
+        { open: '[', close: ']' },
+        { open: '{', close: '}' },
+        { open: '(', close: ')' },
+        { open: "'", close: "'", notIn: ['string', 'comment'] },
+        { open: '"', close: '"', notIn: ['string'] },
         { open: "『", close: "』", notIn: ['string', 'comment'] },
         { open: '「', close: '」', notIn: ['string'] }
     ],
     surroundingPairs: [
-    //   { open: '{', close: '}' },
-    //   { open: '[', close: ']' },
-    //   { open: '(', close: ')' },
-    //   { open: '"', close: '"' },
-    //   { open: "'", close: "'" },
+        { open: '{', close: '}' },
+        { open: '[', close: ']' },
+        { open: '(', close: ')' },
+        { open: '"', close: '"' },
+        { open: "'", close: "'" },
         { open: '『', close: '』' },
         { open: "「", close: "」" }
     ],

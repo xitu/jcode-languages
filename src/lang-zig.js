@@ -1,4 +1,30 @@
 export default {
+	LanguageConfiguration: {
+		comments: {
+			lineComment: '//',
+			blockComment: ['/*', '*/']
+		},
+		brackets: [
+			['{', '}'],
+			['[', ']'],
+			['(', ')']
+		],
+		autoClosingPairs: [
+			{ open: '[', close: ']' },
+			{ open: '{', close: '}' },
+			{ open: '(', close: ')' },
+			{ open: "'", close: "'", notIn: ['string', 'comment'] },
+			{ open: '"', close: '"', notIn: ['string'] }
+		],
+		surroundingPairs: [
+			{ open: '{', close: '}' },
+			{ open: '[', close: ']' },
+			{ open: '(', close: ')' },
+			{ open: '"', close: '"' },
+			{ open: "'", close: "'" }
+		],
+	},
+
 	tokenPostfix: '.zig',
 	defaultToken: 'invalid',
   keywords: [
