@@ -8,34 +8,17 @@ export default {
         blockComment: ['/*', '*/']
     },
     brackets: [
-      ['{', '}'],
-      ['[', ']'],
-      ['(', ')']
+      ['『', '』'],
+      ['「', '」'],
     ],
     autoClosingPairs: [
-        { open: '[', close: ']' },
-        { open: '{', close: '}' },
-        { open: '(', close: ')' },
-        { open: "'", close: "'", notIn: ['string', 'comment'] },
-        { open: '"', close: '"', notIn: ['string'] },
         { open: "『", close: "』", notIn: ['string', 'comment'] },
         { open: '「', close: '」', notIn: ['string'] }
     ],
     surroundingPairs: [
-        { open: '{', close: '}' },
-        { open: '[', close: ']' },
-        { open: '(', close: ')' },
-        { open: '"', close: '"' },
-        { open: "'", close: "'" },
         { open: '『', close: '』' },
         { open: "「", close: "」" }
     ],
-    // folding: {
-    //   markers: {
-    //     start: new RegExp('^\\s*#pragma\\s+region\\b'),
-    //     end: new RegExp('^\\s*#pragma\\s+endregion\\b')
-    //   }
-    // }
   },
   keywordsExtend: "子曰|且施|平施|以俟其毕|行是術以俟其毕|以俟其畢|行是術以俟其畢|爪哇國有腳本|其文如是矣|記|無名|今有令|行之|得其矣|其參共|其參若干|候之以|候|畢|毕",
   storageType: "元|物|爻|術|言|列|數",
@@ -48,35 +31,43 @@ export default {
   keywordsOther: "不知何禍歟|不復存矣|如事不諧|姑妄行此|吾嘗觀|之禍歟|乃作罷|名之曰|書之|以施|之禍|嗚呼|之義|昔之|方悟|是矣|今有|吾有|之書|物之|夫|中|今|取|噫|曰|施|豈|有",
   tokenizer: {
       root: [
-          [/@keywordsExtend/, "keyword"],
-          [/(注曰|疏曰|批曰)。「「/, 'comment', '@blockComment'],
-          [/(注曰|疏曰|批曰).*$/, 'comment'],
-          [/^#!.*$/, 'metatag'],
-          [/「「/, 'string', '@string'],
-          [/「/, 'variable.name', '@variableName'],
-          [/。/, 'delimiter'],
-          [/@constantNumeric/, "number"],
-          [/@constantLang/, "constant.language"],
-          [/@keywordsModifier/, "keyword"],
-          [/@keywordsType/, "type"],
-          [/@keywordsControl/, "keyword.control"],
-          [/@keywordsOperator/, "operators"],
-          [/@keywordsOther/, "keyword"],
-          [/@storageType/, "storage.type"]
+        [/^#!.*$/, 'metatag'],
+        [/@keywordsExtend/, "keyword"],
+        [/(注曰|疏曰|批曰)。「「/, 'comment', '@comment'],
+        [/(注曰|疏曰|批曰)。『/, 'comment', '@comment'],
+        [/(注曰|疏曰|批曰).*$/, 'comment'],
+        [/\/\*/, 'comment', '@blockComment'],
+        [/「「/, 'string', '@string'],
+        [/『/, 'string', '@string'],
+        [/「/, 'variable.name', '@variableName'],
+        [/。/, 'delimiter'],
+        [/@constantNumeric/, "number"],
+        [/@constantLang/, "constant.language"],
+        [/@keywordsModifier/, "keyword"],
+        [/@keywordsType/, "type"],
+        [/@keywordsControl/, "keyword.control"],
+        [/@keywordsOperator/, "operators"],
+        [/@keywordsOther/, "keyword"],
+        [/@storageType/, "storage.type"]
       ],
-      blockComment:[
-          [/[^」]+/, 'comment'],
-          [/」」/, 'comment', '@pop'],
-          [/[」]/, 'comment']
+      blockComment: [
+        [/[^\/*]+/, 'comment'],
+        [/\*\//, 'comment', '@pop'],
+        [/[\/*]/, 'comment']
+      ],
+      comment:[
+        [/[^」』]+/, 'comment'],
+        [/」」|』/, 'comment', '@pop'],
+        [/[」』]/, 'comment']
       ],
       string:[
-          [/[^」]+/, 'string'],
-          [/」」/, 'string', '@pop'],
-          [/[」]/, 'string']
+        [/[^」』]+/, 'string'],
+        [/」」|』/, 'string', '@pop'],
+        [/[」』]/, 'string']
       ],
       variableName:[
-          [/[^」]+/, 'variable.name'],
-          [/」/, 'variable.name', '@pop']
+        [/[^」]+/, 'variable.name'],
+        [/」/, 'variable.name', '@pop']
       ]
   },
   brackets:[['「','」','bracket']]
