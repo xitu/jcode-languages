@@ -1,3 +1,10 @@
+const IndentAction = {
+  Indent: 1,
+  IndentOutdent: 2,
+  None: 0,
+  Outdent: 3,
+};
+
 export default {
 	LanguageConfiguration: {
 		wordPattern:
@@ -20,7 +27,7 @@ export default {
 				beforeText: /^\s*\/\*\*(?!\/)([^\*]|\*(?!\/))*$/,
 				afterText: /^\s*\*\/$/,
 				action: {
-					indentAction: languages.IndentAction.IndentOutdent,
+					indentAction: IndentAction.IndentOutdent,
 					appendText: ' * '
 				}
 			},
@@ -28,7 +35,7 @@ export default {
 				// e.g. /** ...|
 				beforeText: /^\s*\/\*\*(?!\/)([^\*]|\*(?!\/))*$/,
 				action: {
-					indentAction: languages.IndentAction.None,
+					indentAction: IndentAction.None,
 					appendText: ' * '
 				}
 			},
@@ -36,7 +43,7 @@ export default {
 				// e.g.  * ...|
 				beforeText: /^(\t|(\ \ ))*\ \*(\ ([^\*]|\*(?!\/))*)?$/,
 				action: {
-					indentAction: languages.IndentAction.None,
+					indentAction: IndentAction.None,
 					appendText: '* '
 				}
 			},
@@ -44,7 +51,7 @@ export default {
 				// e.g.  */|
 				beforeText: /^(\t|(\ \ ))*\ \*\/\s*$/,
 				action: {
-					indentAction: languages.IndentAction.None,
+					indentAction: IndentAction.None,
 					removeText: 1
 				}
 			}

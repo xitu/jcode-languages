@@ -1,3 +1,10 @@
+const IndentAction = {
+  Indent: 1,
+  IndentOutdent: 2,
+  None: 0,
+  Outdent: 3,
+};
+
 export default {
 	LanguageConfiguration: {
 		comments: {
@@ -28,7 +35,7 @@ export default {
 				beforeText: new RegExp(
 					'^\\s*(?:def|class|for|if|elif|else|while|try|with|finally|except|async).*?:\\s*$'
 				),
-				action: { indentAction: languages.IndentAction.Indent }
+				action: { indentAction: IndentAction.Indent }
 			}
 		],
 		folding: {
