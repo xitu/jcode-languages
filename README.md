@@ -132,7 +132,7 @@ import {CodeXClient, logger} from 'https://cdn.jsdelivr.net/npm/jcode-tools@^0.1
 | python | [lang-python](https://xitu.github.io/jcode-languages/dist/lang-python.json) | [🐍 python-demo](https://code.juejin.cn/pen/7124120405828173831) |
 | ruby | [lang-ruby](https://xitu.github.io/jcode-languages/dist/lang-ruby.json) | [🦑 ruby-demo](https://code.juejin.cn/pen/7124181246045290532) |
 | rust | [lang-rust](https://xitu.github.io/jcode-languages/dist/lang-rust.json) | [🦁 rust-demo](https://code.juejin.cn/pen/7123427292306817060) |
-| scala | [lang-scala](https://xitu.github.io/jcode-languages/dist/lang-scala.json) | [🦉 zig-demo](https://code.juejin.cn/pen/7124673834191421477) |
+| scala | [lang-scala](https://xitu.github.io/jcode-languages/dist/lang-scala.json) | [🐿 scala-demo](https://code.juejin.cn/pen/7124673834191421477) |
 | zig | [lang-zig](https://xitu.github.io/jcode-languages/dist/lang-zig.json) | [🦉 zig-demo](https://code.juejin.cn/pen/7123497832207613988) |
 
 ## 如何扩展我的自定义语言
